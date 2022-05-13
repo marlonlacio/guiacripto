@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background-image: url(imagens/background.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(36, 34, 34);
+    background-blend-mode: multiply;
+    
+}
+
+#cabecalho{
+    padding: 10px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(213, 197, 50);
+    justify-content: space-evenly;
+}
+
+#topo{
+    z-index: 1000;
+    background-color: rgba(112, 112, 112, 0.2);
+}
+
+#menu{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+#menu li{
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid blue;
+    list-style: none;
+}
+
+#menu li:hover{
+    border-bottom: none;
+    box-shadow: 5px 5px 5px blue;
+}
+
+#menu li a{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(7, 16, 77);
+    text-decoration: none;
+}
+
+.botao{
+    display: none;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.096);
+    margin-top: 25px;
+    box-shadow: -1px 1px 5px rgb(0, 0, 0);
+}
+
+.container h2{
+    text-align: center;
+    color: white;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container div{
+    margin-top: 5px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 10px red;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer a{
+    font-size: medium;
+}
+@media(max-width:810px){
+    #cabecalho{
+        margin-top: 0px;
+    }
+    #menu{
+        right: 0px;
+        display: none;
+        position: fixed;
+    }
+    #menu li{
+        background-color: rgba(255, 255, 255, 0.723);
+        margin-top: 5px;
+    }
+    .botao{
+        font-size: large;
+        padding: 3px;
+        display: block;
+        box-shadow: 3px 3px 1.5px grey;
+        border: none;
+        color: white;
+        background-color: blue;
+        border-radius: 4px;
+    }
+    .container{
+        margin-top: 35px;
+    }
+    .container div{
+        justify-content: unset;
+        width: 100%;
+        overflow-y: auto;
+    }
+    .container div a{
+        margin: 12px;
+    }
+    
+}
+
